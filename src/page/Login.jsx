@@ -22,7 +22,8 @@ const Login = () => {
 
     const style = {
         margin: "100px auto",
-        width: "30%",
+        maxWidth: "90%",
+        width: "600px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
