@@ -93,3 +93,8 @@ export { default as IntegrationPageEdit } from './IntegrationPage/IntegrationPag
 // courses
 export { default as CoursesList } from './Courses/CoursesList';
 export { default as CoursesEdit } from './Courses/CoursesEdit';
+
+// feedback
+export { default as FeedbackList } from './Feedback/FeedbackList';
+export { default as FeedbackCreate } from './Feedback/FeedbackCreate';
+export { default as FeedbackEdit } from './Feedback/FeedbackEdit';

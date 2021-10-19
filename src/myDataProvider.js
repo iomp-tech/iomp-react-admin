@@ -2,8 +2,9 @@ import { fetchUtils } from "react-admin";
 import restServerProvider from 'ra-data-json-server';
 import { format, isDate } from "date-fns";
 
-export const servicesHost = 'https://api.iomp.ru/public/api';
+export const servicesHost = 'http://127.0.0.1:8000/api';
 //http://127.0.0.1:8000/api
+// https://api.iomp.ru/public/api
 
 const httpClient = (url, options = {}) => {
 	if (!options.headers) {
@@ -22,7 +23,7 @@ const myDataProfider = {
 		let formData = new FormData();
 
 		for (let key in params.data) {
-			if (key === "thumb" || key === "avatar" || key === "icon") {
+			if (key === "thumb" || key === "avatar" || key === "icon" || key === "image") {
 				formData.append(key, params.data[key].rawFile);
 			} else if (key === "block") {
 				formData.append('block', JSON.stringify(params.data[key]));
@@ -113,7 +114,7 @@ const myDataProfider = {
 
 		for (let key in params.data) {
 			if (params.data[key]) {
-				if (key === "thumb" || key === "avatar" || key === "icon") {
+				if (key === "thumb" || key === "avatar" || key === "icon" || key === "image") {
 					if (params.data[key].rawFile) {
 						formData.append(key, params.data[key].rawFile);
 					}
