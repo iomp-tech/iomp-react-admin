@@ -21,7 +21,6 @@ const UsersList = (props) => {
     return (
         <List
             {...props}
-            pagination={false}
             title="Пользователи"
             filters={<UsersFilter />}
         >
