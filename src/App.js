@@ -8,7 +8,7 @@ import myDataProvider from './myDataProvider';
 
 import { Login } from './page';
 
-import { MyLayout, GoodsCreate, GoodsEdit, GoodsList, GoodsTimetypeList, GoodsTimetypeCreate, GoodsTimetypeEdit, CategoriesList, CategoriesCreate, CategoriesEdit, SectionMainList, SectionMainEdit, TeachersList, TeachersCreate, TeachersEdit, SectionServicesList, SectionServicesCreate, SectionServicesEdit, SectionAboutList, SectionAboutCreate, SectionAboutEdit, FooterMenuCreate, FooterMenuList, FooterMenuEdit, FooterContactList, FooterContactEdit, PostsList, PostsCreate, PostsEdit, PostTypeList, PostTypeCreate, PostTypeEdit, TimetableList, TimetableCreate, TimetableEdit, TimetableTypeList, TimetableTypeCreate, TimetableTypeEdit, FormSubcsribeList, FormSubcsribeEdit, InstituteList, InstituteCreate, InstituteEdit, GoodsTypeList, GoodsTypeCreate, GoodsTypeEdit, FooterSocialList, FooterSocialEdit, FooterSocialCreate, FooterLegalList, FooterLegalCreate, FooterLegalEdit, UsersList, UserEdit, IntegrationPageList, IntegrationPageEdit, CoursesList, CoursesEdit, FeedbackList, FeedbackCreate, FeedbackEdit } from './components';
+import { MyLayout, GoodsCreate, GoodsEdit, GoodsList, GoodsTimetypeList, GoodsTimetypeCreate, GoodsTimetypeEdit, CategoriesList, CategoriesCreate, CategoriesEdit, SectionMainList, SectionMainEdit, TeachersList, TeachersCreate, TeachersEdit, SectionServicesList, SectionServicesCreate, SectionServicesEdit, SectionAboutList, SectionAboutCreate, SectionAboutEdit, FooterMenuCreate, FooterMenuList, FooterMenuEdit, FooterContactList, FooterContactEdit, PostsList, PostsCreate, PostsEdit, PostTypeList, PostTypeCreate, PostTypeEdit, TimetableList, TimetableCreate, TimetableEdit, TimetableTypeList, TimetableTypeCreate, TimetableTypeEdit, FormSubcsribeList, FormSubcsribeEdit, InstituteList, InstituteCreate, InstituteEdit, GoodsTypeList, GoodsTypeCreate, GoodsTypeEdit, FooterSocialList, FooterSocialEdit, FooterSocialCreate, FooterLegalList, FooterLegalCreate, FooterLegalEdit, UsersList, UserEdit, IntegrationPageList, IntegrationPageEdit, CoursesList, CoursesEdit, FeedbackList, FeedbackCreate, FeedbackEdit, PolicyList, PolicyCreate, PolicyEdit, OffertaList, OffertaCreate, OffertaEdit } from './components';
 
 const i18nProvider = polyglotI18nProvider(() => russianMessages, 'ru');
 
@@ -46,8 +46,12 @@ const App = () => (
 		<Resource name="integrationPage" list={IntegrationPageList} edit={IntegrationPageEdit} options={{ label: 'Интеграции', menu: "L" }} />
 
 		<Resource name="courses" list={CoursesList} edit={CoursesEdit} options={{ label: 'Сессионная комната', menu: "M" }} />
-	
+
 		<Resource name="feedback" list={FeedbackList} create={FeedbackCreate} edit={FeedbackEdit} options={{ label: 'Отзывы', menu: "N" }} />
+
+		<Resource name="policy" list={PolicyList} create={PolicyCreate} edit={PolicyEdit} options={{ label: 'Политика', menu: "O" }} />
+
+		<Resource name="offerta" list={OffertaList} create={OffertaCreate} edit={OffertaEdit} options={{ label: 'Офферта', menu: "P" }} />
 	</Admin>
 );
 

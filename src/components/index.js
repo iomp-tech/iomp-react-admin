@@ -98,3 +98,13 @@ export { default as CoursesEdit } from './Courses/CoursesEdit';
 export { default as FeedbackList } from './Feedback/FeedbackList';
 export { default as FeedbackCreate } from './Feedback/FeedbackCreate';
 export { default as FeedbackEdit } from './Feedback/FeedbackEdit';
+
+// policy
+export { default as PolicyList } from './Policy/PolicyList';
+export { default as PolicyCreate } from './Policy/PolicyCreate';
+export { default as PolicyEdit } from './Policy/PolicyEdit';
+
+// offerta
+export { default as OffertaList } from './Offerta/OffertaList';
+export { default as OffertaCreate } from './Offerta/OffertaCreate';
+export { default as OffertaEdit } from './Offerta/OffertaEdit';
