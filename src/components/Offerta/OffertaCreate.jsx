@@ -2,9 +2,10 @@ import React from "react";
 import {
     Create,
     SimpleForm,
-    TextInput,
+	TextInput,
     required,
 } from "react-admin";
+import RichTextInput from "ra-input-rich-text";
 
 import {defaultStyle} from "../../style";
 
@@ -18,7 +19,7 @@ const OffertaCreate = (props) => {
                     validate={[required()]}
                     style={defaultStyle}
                 />
-                <TextInput
+                <RichTextInput
                     source="description"
                     label="Описание"
                     validate={[required()]}

@@ -12,11 +12,6 @@ const OffertaList = (props) => {
             <Datagrid>
                 <EditButton />
                 <TextField label="Заголовок" source="title" sortable={false} />
-                <TextField
-                    label="Описание"
-                    source="description"
-                    sortable={false}
-                />
             </Datagrid>
         </List>
     );
